@@ -221,20 +221,47 @@ En el caso de los prestadores de los servicios de salud, les permitirá  mejorar
 
 \subsection{Precio}
 
-El uso del sistema no se cobrará a los pacientes, ni se cobrará la instalación a los servicios de salud. Sólo se cobrará un pequeña comisión por cada turno reservado por este medio y que no alla sido
+El uso del sistema no se cobrará a los pacientes, ni se cobrará la instalación a los servicios de salud. Sólo se cobrará un pequeña comisión por cada turno reservado por este medio y que no haya sido
 cancelado. De cada una de estas consultas tomaremos un $5\%$ de su valor. 
+
 El promedio de la consulta a médico clínico es de $\$200$ por lo que tendríamos $\$10$ de ingreso por consulta. Según la encuesta realizada, el $95\%$ de las personas estaría dispuesta a pagar este monto. Además, se cobraría en caso de ser necesario el soporte técnico de acuerdo a los valores de mercado presentes en ese momento. 
+
 Sin embargo, una de las mayores fuentes de ingreso será la publicidad dirigida a los pacientes y médicos promocionando productos relacionados con la salud, tales como medicamentos, laboratorios, farmacias, prepagas o médicos particulares. El valor se adecuará a los precios del momento para publicidad en internet.
 
 \subsection{Promoción}
 
 La publicidad se realizará mediante las redes sociales para llegar a los pacientes, o por medio de la comunicación directa via mail o personalmente con los prestadores de servicios e instituciones relacionadas.
+
 Estos anuncios en medios masivos tales como Facebook pueden llegar a una gran cantidad de personas en poco tiempo, pero son costosos. Según estadísticas de la red en CABA y Buenos Aires, un $75\%$ de los habitantes alfabetizados utilizan internet casi todos los días. La tasa de alfabetización en Buenos Aires es de $98.7\%$, por lo que la cantidad de personas que utilizan internet regularmente es de $74\%$. El costo de la publicidad depende directamente de la cantidad de gente que la vea. Considerando los datos provistos por la red social Facebook para Argentina, por la inversión en dolares se triplica el número de instalaciones de la aplicación. Además, la cantidad de personas que clickearán en la publicidad será de 15 veces la inversión hecha.
 
 \subsection{Plaza}
 
-Al comienzo del proyecto nos centraremos en la población de CABA y Provincia de Buenos Aires, la cual totaliza unos 14.391.538 habitantes. Aproximadamente 8.3 millones tienen algún tipo de obra social, 2.2 millones utilizan algún tipo de medicina prepaga, y el resto se atiende mediante el sistema público. La cantidad de consultas médicas anuales en el sistema privado se estima en un total de 105.8 millones. 
-Estimando que un $2\%$ de estas consultas se realicen utilizando nuestro sistema, se obtendrían 5.29 millones de consultas anuales del sector privado. 
+Al comienzo del proyecto nos centraremos en la población de CABA y Provincia de Buenos Aires, la cual totaliza unos 14.391.538 habitantes. Aproximadamente 8.3 millones tienen algún tipo de obra social, 2.2 millones utilizan algún tipo de medicina prepaga, y el resto se atiende mediante el sistema público. 
+
+\begin{center}
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{./Imagenes/g1.png}
+\caption{Distribución de habitantes según cobertura (BA y CABA)}
+\label{fig:hp}
+\end{figure}
+\end{center}
+
+La cantidad de consultas médicas anuales en el sistema privado se estima en un total de 105.8 millones y en 71 millones en el sector público. Podemos realizar una estimación de la aceptación que tendría nuestro sistema considerando que un $2\%$ de estas consultas se efectúan por este medio.
+
+\begin{table} [H]
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+		&Consultas anuales (millones)	&Consultas en sistema (millones)	&Ingresos (millones en \$)\\\hline
+Privado	&105.8							&2.116								&21.16\\\hline
+Público	&71								&1.42								&14.2\\\hline
+Total	&176.8							&3.526								&35.26\\\hline
+\end{tabular}
+\end{center}
+\caption{Ingresos estimados por consultas en sistema}
+\end{table}
+
 Considerando los proveedores de servicios de salud se encontró que la cantidad de médicos en CABA y Buenos Aires es de unos 57500. Hay además, 4600 establecimientos privados y 300 obras sociales. Suponiendo que un $5\%$ de estos además requieran datos estadísticos en forma anual para distintos fines, como investigaciones científicas, se obtendrían unas 245 solicitudes.
 
 \subsection{Clientes}
@@ -253,9 +280,33 @@ Considerando estos valores, podemos estimar que un $30\%$ de los médicos que co
 
 El módulo de diagnósticos podría ser quizás el más controvertido de todos debido a que está reemplazando en parte la labor de un profesional. Sin embargo, como se mostrará a continuación podría tener una gran aceptación debido en parte a la saturación del sistema de salud y a la necesidad de agilizar los tiempos de diagnóstico y tratamiento.
 
-Según la encuesta realizada por JMIR publications, el $95\%$ de los médicos y el  $81\%$ de los pacientes cree que la tecnología informática debe utilizarse en la medicina, o se encuentra entusiasmado por su posible uso. Por otro lado, al $58\%$ de los médicos le gusta la tecnología, pero prefiere los diagnósticos profesionales, mientras que un $13.8\%$ recomendaria utilizarla para diagnósticos. Solo el $28\%$ se siente incómodo sobre la posible utilización de la misma. En el caso de los pacientes, los resultados son $44.6\%$, $39.66\%$ y $15.88\%$ respectivamente. Ese $58\%$ sería factible de ser persuadido a reveer su posición si los resultados obtenidos por el módulo de diagnósticos fueran acertados. Quizás su indecisión se deba al temor a ser desplazados de su posición y ser reemplazados por este tipo de sistemas. Por lo cual sería necesario hacer incapié en la imposibilidad de dicha supocisión.
+Según la encuesta realizada por JMIR publications, el $95\%$ de los médicos y el  $81\%$ de los pacientes cree que la tecnología informática debe utilizarse en la medicina, o se encuentra entusiasmado por su posible uso.
 
-Finalmente, según encuesta de Medscape, se observó que un $69\%$ de los médicos utilizarían la tecnología como ayuda en los diagnósticos, mientras que este porcentaje es de $84\%$ para los pacientes.
+Por otro lado, al $58\%$ de los médicos le gusta la tecnología, pero prefiere los diagnósticos profesionales, mientras que un $13.8\%$ recomendaria utilizarla para diagnósticos. Solo el $28\%$ se siente incómodo sobre la posible utilización de la misma. En el caso de los pacientes, los resultados son $44.6\%$, $39.66\%$ y $15.88\%$ respectivamente. El porcentaje de profesionales que prefieren el método tradicional sería factible de ser persuadido a reveer su posición al ver los buenos resultados del módulo de diagnósticos. Quizás su indecisión se deba al temor a ser desplazados de su posición y ser reemplazados por este tipo de sistemas. Por lo cual sería necesario hacer incapié en la imposibilidad de dicha supocisión.
+
+\begin{center}
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{./Imagenes/g2.png}
+\caption{Reacción de pacientes y profesionales ante la posibilidad de usar diagnostico automatizado (JMIR)}
+\label{fig:hp}
+\end{figure}
+\end{center}
+
+
+Finalmente, según encuesta de Medscape, se observó que un $69\%$ de los médicos utilizarían la tecnología como ayuda en los diagnósticos, mientras que este porcentaje es de $84\%$ para los pacientes. Además, al menos un $64\%$ de pacientes y un $63\%$ de médicos están de acuerdo en el uso de tecnología, para la realización de estudios clínicos.
+
+\begin{table} [H]
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+			&JMIR 1 (\%)	&JMIR 2 (\%)	&Medscape 1 (\%)	&Medscape 2 (\%)	&Promedio (\%)\\\hline
+Médicos		&95							&13.8						&69							&63									&59\\\hline
+Pacientes	&81							&15.88						&84							&64									&67\\\hline
+\end{tabular}
+\end{center}
+\caption{Porcentaje de clientes que utilizarían el sistema para diagnósticos}
+\end{table}
 
 \subsubsection{Módulo de estadísticas}
 
@@ -265,11 +316,8 @@ papers de medicina utilizan análisis estadísticos para llegar a sus conclusion
 \subsection{Competidores}
 
 Si bien algunas prepagas u hospitales tienen sistemas de turnos online, 
-el hecho de que se ofrezcan sus servicios les permitiría captar nuevos clientes particulares, 
-mediante la oferta que muestran. Además, la aplicación ofrece servicios de reacomodamiento 
-de turnos en tiempo real dependiendo del geoposicionamiento del paciente o las 
-actualizaciones de último momento que este realice. Dichos servicios no se encuentran en 
-ninguna aplicación similar. 
+el hecho de que se ofrezcan sus servicios les permitiría captar nuevos clientes particulares, mediante la oferta que muestran. Además, la aplicación ofrece servicios de reacomodamiento de turnos en tiempo real dependiendo del geoposicionamiento del paciente o las actualizaciones de último momento que este realice. Dichos servicios no se encuentran en ninguna aplicación similar y permiten ahorrar parte de las perdidas generadas por estos inconvenientes. Dichas pérdidas se estiman en 
+6.01 millones de pesos anuales.
 
 \subsection{Colaboradores}
 
@@ -332,7 +380,7 @@ Considerando que los 63000 pacientes solicitan unos 170000 turnos, y que cobramo
 
 Por lo tanto, consideramos que el sistema será no solo rentable, sino que es una buena inversión considerando las proyecciones en materia tecnológica para el ámbito de la salud.
 
-\begin{thebibliography}{21}%El numero es fijo según el numero de referencias
+\begin{thebibliography}{23}%El numero es fijo según el numero de referencias
 \bibitem{link1} http://www.deis.gov.ar/guia.htm 
 \bibitem{link2} https://sisa.msal.gov.ar/sisa/\#sisa 
 \bibitem{link3} http://www.ms.gba.gov.ar/wp-content/uploads/2013/04/guia-establecimientos.pdf
@@ -354,7 +402,8 @@ Por lo tanto, consideramos que el sistema será no solo rentable, sino que es un
 \bibitem{link18} http://medicaleconomics.modernmedicine.com/medical-economics/news/modernmedicine/modern-medicine-feature-articles/5-tech-trends-will-affect-way
 \bibitem{link19} http://www.stat.tugraz.at/AJS/ausg072/072Strasak.pdf
 \bibitem{link20} http://wiki.partidodelared.org/index.php/Estadísticas\_sobre\_la\_Red
-
+\bibitem{link21} http://www.buenosaires.gob.ar/sites/gcaba/files/egresos\_indicadores\_de\_internacion\_consultas\_externas\_ano\_2014.pdf
+\bibitem{link22} http://www.lanacion.com.ar/1827542-un-balance-dispar-en-la-gestion-de-la-salud-de-parte-de-los-presidenciables
 \end{thebibliography}
 
 \end{document}
